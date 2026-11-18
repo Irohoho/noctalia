@@ -36,10 +36,12 @@ namespace Style {
   inline constexpr float barCapsulePadding = 6.0F;
   inline constexpr float baseGlyphSize = 16.0F;
 
-  inline constexpr float fontSizeMini = 12.0F;
-  inline constexpr float fontSizeCaption = 14.0F;
-  inline constexpr float fontSizeBody = 15.0F;
-  inline constexpr float fontSizeTitle = 17.0F;
+  // Reference text sizes at a 14 px body. The renderer scales all text by the system base size
+  // (GTK font) divided by fontSizeBody, so these are proportions rather than final pixel sizes.
+  inline constexpr float fontSizeMini = 11.0F;
+  inline constexpr float fontSizeCaption = 13.0F;
+  inline constexpr float fontSizeBody = 14.0F;
+  inline constexpr float fontSizeTitle = 16.0F;
   inline constexpr float fontSizeHeader = 20.0F;
 
   inline constexpr float controlHeightSm = 32.0F;
